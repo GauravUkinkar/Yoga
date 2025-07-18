@@ -1,14 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
 
-import './App.scss'
+import Header from "./component/Header/Header";
+import Home from "./pages/Home/Home";
 
 function App() {
-  
-
   return (
     <>
-     <h2>Yoga Website</h2>
+      <BrowserRouter>
+      <Header />
+        <Routes>
+          <Route path="/" element={<Home /> } />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

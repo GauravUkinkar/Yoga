@@ -1,0 +1,29 @@
+.header-parent {
+  height: 80px;
+  background: transparent;
+  position: absolute;
+  padding-top: 50px;
+  z-index: 5;
+
+  .header-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10px;
+    .logo {
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    }
+    .menu {
+      display: flex;
+      color: var(--white);
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}

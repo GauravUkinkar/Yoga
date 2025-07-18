@@ -1,0 +1,87 @@
+:root {
+  --accent: #e9ab00;
+  --black: #000;
+  --white: #fff;
+  --text: #6b6b96;
+  --background: #fdf9ed;
+  --unit: 20px;
+  --trans: all 0.33s ease-in-out;
+  --trans-q: all 0.15s ease-in-out;
+  --shadow: 0px 0px 30px rgba(0, 0, 0, 0.116);
+  --width: 1200px;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*,
+*::after,
+*::before {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: calc(var(--unit));
+  // color: var(--black);
+ font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+}
+
+.parent {
+  width: 100%;
+  .cont {
+    max-width: var(--width);
+    padding: 0px calc(var(--unit) / 2);
+    margin: auto;
+    height: 100%;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  word-spacing: 2.5px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.5px;
+  color: var(--black);
+  font-size: 40px;
+  max-width: 40ch;
+
+  span {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+
+    font-family: inherit !important;
+  }
+}
+.bg-img-cover {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.bg-img-contain {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.btn{
+  padding:15px 30px;
+  background-color: var(--accent);
+  color: var(--white);
+  width:fit-content;
+  border-radius:30px 0px 30px 0px;
+  font-weight:500;
+  font-size: 22px;
+
+}

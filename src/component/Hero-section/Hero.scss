@@ -1,0 +1,135 @@
+.hero-parent {
+  background: url("../../assets/herobg1.png") no-repeat center center;
+  // background:red;
+  height: 100dvh;
+  background-size: cover;
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 19, 0, 0.596);
+  }
+  .img-group-left {
+    position: absolute;
+    top: 50px;
+    // left: -25px;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+
+    .left-img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+      margin-left: -25px;
+      // opacity: 0.5;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      //   opacity: 0.5;
+    }
+  }
+  .img-group-right {
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .right-img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+      border: 1px solid red;
+      margin-right: -25px;
+    }
+  }
+  .social-icons {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.158);
+    padding: 20px 15px;
+    border-radius: 0px 20px 20px 0px;
+    gap: 20px;
+    color: var(--white);
+    a {
+      background: rgba(0, 0, 0, 0.164);
+      padding: 10px;
+      border-radius: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--trans-q);
+      &:hover {
+        background: var(--white);
+        color: var(--accent);
+      }
+    }
+  }
+  .hero-cont {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .sec-indicator {
+        color: var(--white);
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 54px;
+        font-weight: 600;
+        color: var(--white);
+        span {
+          color: var(--accent);
+        }
+      }
+      p {
+        color: rgba(255, 255, 255, 0.534);
+        font-size: 20px;
+        max-width: 500px;
+      }
+      .icon {
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        color: var(--white);
+
+        svg {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
