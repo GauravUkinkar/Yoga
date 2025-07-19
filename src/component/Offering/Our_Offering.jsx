@@ -1,16 +1,14 @@
 import React from "react";
 import "./Our_offering.scss";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-
-
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination } from "swiper/modules";
 
 const Our_Offering = () => {
   return (
@@ -29,7 +27,7 @@ const Our_Offering = () => {
           </div>
           <div className="slider-group">
             <Swiper
-              slidesPerView={3}
+              slidesPerView={2}
               spaceBetween={30}
               freeMode={true}
               pagination={{
@@ -39,15 +37,33 @@ const Our_Offering = () => {
               className="mySwiper"
               breakpoints={{
                 320: { slidesPerView: 1 },
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3},
+                640: { slidesPerView: 1 },
+                1024: { slidesPerView: 2 },
               }}
             >
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-          
+              <SwiperSlide>
+                <div className="img-boxs">
+                    <div className="overlay"></div>
+                    <div className="content">
+                        <div className="number">01</div>
+                        <div className="heading">Lorem, ipsum dolor.</div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                        <div className="btn">fd</div>
+                    </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="img-boxs"></div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="img-boxs"></div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="img-boxs"></div>
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>

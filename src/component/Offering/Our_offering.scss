@@ -29,32 +29,41 @@
 
     //------------------Slider Group----------------------//
     .slider-group {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border:1px solid red;
-        width:var(--width);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 30px;
+      width: var(--width);
       .swiper {
-        width:100%;
+        width: 100%;
         height: 100%;
       }
 
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #444;
 
         /* Center slide text vertically */
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        .img-boxs {
+          border: 1px solid red;
+          width: 100%;
+          height: 300px;
+          border: 1px solid red;
+          border-radius: 10px;
+          position: relative;
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.199);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
