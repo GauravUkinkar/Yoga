@@ -4,8 +4,8 @@ import { FaArrowDownLong, FaLinkedinIn } from "react-icons/fa6";
 import "./Hero.scss";
 import img3 from "../../assets/banner-l-top.png";
 import img4 from "../../assets/banner-l-top2.png";
-import img5 from "../../assets/banner-r-bottom.png"
-import img6 from "../../assets/banner-r-bottom2.png"
+import img5 from "../../assets/banner-r-bottom.png";
+import img6 from "../../assets/banner-r-bottom2.png";
 import { ImFacebook } from "react-icons/im";
 import { IoLogoTwitter } from "react-icons/io";
 // Custom hook for looping typing effect
@@ -61,7 +61,7 @@ const Hero = () => {
           <img src={img4} alt="Background Image" />
         </div>
         <div className="img-group-right">
-            <img className="right-img" src={img5} alt="backgorund image" />
+          <img className="right-img" src={img5} alt="backgorund image" />
           <img className="right-img2" src={img6} alt="Background Image" />
         </div>
         <div className="social-icons">

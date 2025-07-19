@@ -1,0 +1,61 @@
+.our-offering-parent {
+  background: var(--background);
+  .our-offering-cont {
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .content-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      .sec-indicator {
+        color: var(--accent);
+      }
+      h2 {
+        text-align: center;
+        max-width: 26ch;
+        font-weight: 600;
+      }
+      p {
+        text-align: center;
+        max-width: 75ch;
+        color: var(--text);
+      }
+    }
+
+    //------------------Slider Group----------------------//
+    .slider-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:1px solid red;
+        width:var(--width);
+      .swiper {
+        width:100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

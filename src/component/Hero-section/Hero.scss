@@ -21,6 +21,7 @@
     z-index: 3;
     display: flex;
     flex-direction: column;
+    animation: floatY 3s ease-in-out infinite alternate;
 
     .left-img {
       width: 80%;
@@ -35,29 +36,33 @@
       object-fit: contain;
       //   opacity: 0.5;
     }
+    @keyframes floatY {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-30px);
+      }
+    }
   }
   .img-group-right {
     position: absolute;
-    bottom: 20%;
+    bottom: 5%;
     right: 0%;
     width: 200px;
-    height: 200px;
+    height: 500px;
     z-index: 3;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    overflow: hidden;
+    animation: floatY 2s ease-in-out infinite alternate;
 
     .right-img {
-      width: 80%;
-      height: 80%;
+      width: 50%;
+      height: 30%;
       object-fit: contain;
-      border: 1px solid red;
-    //   margin-right: -25px;
-    
-
-    
     }
   }
   .social-icons {
@@ -97,10 +102,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      .sec-indicator {
-        color: var(--white);
-        font-size: 20px;
-      }
+    
       h1 {
         font-size: 54px;
         font-weight: 600;
@@ -128,10 +130,19 @@
     }
     .right {
       width: 50%;
+      animation: rightbox 2s ease-in-out infinite alternate;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      @keyframes rightbox {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(30px);
+        }
       }
     }
   }
