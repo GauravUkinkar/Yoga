@@ -1,6 +1,5 @@
-.service-parent{
-    .service-cont{
-
+.service-parent {
+  .service-cont {
     padding: 100px 10px;
     display: flex;
     align-items: center;
@@ -26,5 +25,40 @@
         color: var(--text);
       }
     }
+    .card-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 10px;
+      padding-top: 20px;
+      flex-wrap: wrap;
+      .card {
+        display: flex;
+        width: 280px;
+        height: 500px;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        img {
+          width: 100%;
+          border-radius: 60px 0px 60px 0px;
+        }
+        .heading {
+          font-size: 22px;
+          font-weight: 600;
+          height: 60px;
+          padding-top: 10px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .desc {
+          color: var(--text);
+          font-size: 18px;
+        }
+      }
     }
+  }
 }

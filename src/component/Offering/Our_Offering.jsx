@@ -72,19 +72,19 @@ const Our_Offering = () => {
             </p>
           </div>
           <div className="slider-group">
-           <Swiper
-  slidesPerView={2}
-  spaceBetween={20}
-  pagination={{ clickable: true }}
-  loop={true}
-  autoplay={{
-    delay: 2500,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  }}
-  modules={[Pagination, Autoplay]} 
-  className="mySwiper"
->
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={20}
+              pagination={{ clickable: true }}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              modules={[Pagination, Autoplay]}
+              className="mySwiper"
+            >
               {carddata.map((card) => (
                 <SwiperSlide key={card.id}>
                   <div
