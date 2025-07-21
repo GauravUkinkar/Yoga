@@ -1,6 +1,7 @@
 import React from "react";
 import "./Services.scss";
 import img1 from "../../assets/card1.jpg"
+import { FaArrowRightLong } from "react-icons/fa6";
 const Services = () => {
   return (
     <>
