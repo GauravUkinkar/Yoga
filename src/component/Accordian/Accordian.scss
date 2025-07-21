@@ -1,0 +1,52 @@
+.accordian-parent {
+  .accordian-cont {
+    padding: 100px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .content-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      .sec-indicator {
+        color: var(--accent);
+      }
+      h2 {
+        text-align: center;
+        max-width: 26ch;
+        font-weight: 600;
+      }
+      p {
+        text-align: center;
+        max-width: 75ch;
+        color: var(--text);
+      }
+    }
+   .accordian {
+  .MuiAccordion-root {
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .MuiAccordionSummary-root {
+    background-color: #f3f3f3;
+  }
+
+  .MuiAccordionDetails-root {
+    background-color: #ffffff;
+    padding: 16px;
+  }
+
+  .MuiTypography-root {
+    font-weight: 500;
+  }
+}
+
+  }
+}
