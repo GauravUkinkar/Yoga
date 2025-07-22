@@ -7,6 +7,7 @@ import Work from "../../component/Work-section/Work";
 import Pricing from "../../component/Pricing-section/Pricing";
 import Testimonial from "../../component/Testimonial/Testimonial";
 import Accordian from "../../component/Accordian/Accordian";
+import Footer from "../../component/Footer/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Pricing />
       <Testimonial />
       <Accordian />
+      <Footer />
 
     </>
   );

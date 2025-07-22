@@ -1,0 +1,158 @@
+.footer-parent {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent),
+    url("../../assets/herobg1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .footer-cont {
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .top-footer {
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 50px 100px;
+      gap: 20px;
+      border-radius: 60px 0px 60px 0px;
+      position: absolute;
+      box-shadow: var(--shadow);
+      top: -50%;
+      .sec-indicator {
+        color: var(--accent);
+      }
+      .heading {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 52.8px;
+        color: rgb(36, 36, 36);
+      }
+      .btn {
+        font-family: Karla, sans-serif;
+        font-size: 22px;
+      }
+    }
+    .middel-footer {
+      border: 1px solid red;
+      width: 100%;
+      margin-top: 40px;
+      padding: 10px 10px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      .logo {
+        border: 1px solid red;
+        width: calc(100% / 4);
+        img {
+          width: 100%;
+        }
+      }
+      .about {
+        width: calc(100% / 4);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 30px;
+        h4 {
+          color: var(--white);
+          font-size: 26px;
+        }
+        p {
+          color: white;
+          text-align: left;
+        }
+        .icon-group {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 20px;
+          .icon {
+            display: flex;
+            gap: 20px;
+            color: white;
+            cursor: pointer;
+            align-items: center;
+            svg {
+              font-size: 24px;
+            }
+            a {
+              background: rgba(12, 0, 0, 0.425);
+              padding: 10px;
+              border-radius: 50px;
+              width: 40px;
+              height: 40px;
+              align-items: center;
+              display: flex;
+              box-shadow: var(--shadow);
+              transition: var(--trans);
+              &:hover {
+                background: var(--accent);
+              }
+            }
+          }
+        }
+      }
+      .list {
+        width: calc(100% / 4);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 30px;
+        h4 {
+          color: var(--white);
+          font-size: 26px;
+        }
+        .link-list {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          color: var(--white);
+          a {
+            transition: var(--trans);
+            &:hover {
+              color: var(--accent);
+            }
+          }
+        }
+      }
+      .contact {
+        width: calc(100% / 4);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 30px;
+        h4 {
+          color: var(--white);
+          font-size: 26px;
+        }
+        .icon{
+          display: flex;align-items: center;justify-content: flex-start;  
+          gap:10px;
+          border:1px solid red;
+          svg{
+            color:var(--white);
+            font-size:24px;
+          }
+          span{
+            color:var(--white);
+            cursor:pointer;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.301);
+    padding: 10px;
+    p {
+      color: white;
+      text-align: center;
+    }
+  }
+}
