@@ -20,93 +20,75 @@ const Work = () => {
             </p>
           </div>
           <div className="group-new">
-            <div className="left">
-              <div className="content">
-                <div className="box1">
-                  <div className="left-c">
-                    {" "}
-                    <h3>PCC-ICF & EMCC<br></br> Certified</h3>
-                    <p>
-                     Internationally accredited in professional and ethical coaching.
-                    </p>
-                  </div>
-                  <div className="right-i">
-                    <MdOutlineCheckCircle />
-                  </div>
+            <div class="left">
+              <div class="section">
+                <div class="content">
+                  <h4 class="heading">Vinyasa Yoga</h4>
+                  <p>Dolor reaellendus temorius maiores alia</p>
                 </div>
-                 <div className="box2">
-                  <div className="left-c">
-                    {" "}
-                    <h3>12+ Years Yoga <br></br>Expertise</h3>
-                    <p>
-                     Experienced in teaching traditional, transformative yoga.
-                    </p>
-                  </div>
-                  <div className="right-i">
-                    <MdOutlineCheckCircle />
-                  </div>
+                <div class="icon">
+                  <MdOutlineCheckCircle />
                 </div>
-               
-                <div className="box3">
-                  <div className="left-c">
-                    {" "}
-                    <h3>Integrative Vedic<br></br> Approach</h3>
-                    <p>
-                     Merging ancient wisdom with modern coaching tools.
-                    </p>
-                  </div>
-                  <div className="right-i">
-                    <MdOutlineCheckCircle />
-                  </div>
-                </div>
-                <img className="left-img" src={newimg} alt="Background Images" />
               </div>
-              
+              <div class="section">
+                <div class="content">
+                  <h4 class="heading">Vinyasa Yoga</h4>
+                  <p>Dolor reaellendus temorius maiores alia</p>
+                </div>
+
+                <div class="icon">
+                  <MdOutlineCheckCircle />
+                </div>
+              </div>
+              <div class="section">
+                <div class="content">
+                  <h4 class="heading">Vinyasa Yoga</h4>
+                  <p>Dolor reaellendus temorius maiores alia</p>
+                </div>
+
+                <div class="icon">
+                  <MdOutlineCheckCircle />
+                </div>
+              </div>
+
+              <img src={newimg} alt="" className="line" />
             </div>
             <div className="middle">
               <img src={img3} alt="New Images" />
             </div>
-            <div className="right">
-          <div className="content">
-                <div className="box1">
-                  <div className="left-c">
-                    {" "}
-                    <h3>Coach Training <br></br>Faculty</h3>
-                    <p>
-                     Mentor and faculty at Master My Life Institute.
-                    </p>
-                  </div>
-                  <div className="right-i">
-                    <MdOutlineCheckCircle />
-                  </div>
+            <div class="right">
+              <div class="section">
+                <div class="content">
+                  <h4 class="heading">Vinyasa Yoga</h4>
+                  <p>Dolor reaellendus temorius maiores alia</p>
                 </div>
-                 <div className="box2">
-                  <div className="left-c">
-                    {" "}
-                    <h3>Trusted by Top <br></br>Platforms</h3>
-                    <p>
-                    Coach for BetterUp, Orgro, and LagomWorks.
-                    </p>
-                  </div>
-                  <div className="right-i">
-                    <MdOutlineCheckCircle />
-                  </div>
+
+                <div class="icon">
+                  <MdOutlineCheckCircle />
                 </div>
-               
-                <div className="box3">
-                  <div className="left-c">
-                    {" "}
-                    <h3>Warm & Results-<br></br>Focused</h3>
-                    <p>
-                      Empathetic style with real, lasting impact.
-                    </p>
-                  </div>
-                  <div className="right-i">
-                    <MdOutlineCheckCircle />
-                  </div>
-                </div>
-                <img className="left-img" src={newimg2} alt="Background Images" />
               </div>
+              <div class="section">
+                <div class="content">
+                  <h4 class="heading">Vinyasa Yoga</h4>
+                  <p>Dolor reaellendus temorius maiores alia</p>
+                </div>
+
+                <div class="icon">
+                  <MdOutlineCheckCircle />
+                </div>
+              </div>
+              <div class="section">
+                <div class="content">
+                  <h4 class="heading">Vinyasa Yoga</h4>
+                  <p>Dolor reaellendus temorius maiores alia</p>
+                </div>
+
+                <div class="icon">
+                  <MdOutlineCheckCircle />
+                </div>
+              </div>
+
+              <img src={newimg2} alt="" className="line" />
             </div>
           </div>
         </div>
