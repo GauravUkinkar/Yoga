@@ -28,10 +28,6 @@ const location = useLocation()
       path: "#",
     },
     {
-      name: "Pricing",
-      path: "#",
-    },
-    {
       name: "Testimonial",
       path: "#",
     },

@@ -14,12 +14,11 @@
 *,
 *::after,
 *::before {
-  // border: 1px solid red; 
+  // border: 1px solid red;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-size: calc(var(--unit));
-  // color: var(--black);
   font-family: "Playfair Display", serif;
   scroll-behavior: smooth;
 }

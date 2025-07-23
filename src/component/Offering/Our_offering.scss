@@ -1,6 +1,7 @@
 .our-offering-parent {
-  background: var(--white);
+  background: var(--background);
   position: relative;
+  padding: 50px 0px 230px 0px;
 
   .leave {
     position: absolute;
@@ -8,10 +9,10 @@
     animation: leave 1s ease-in-out infinite alternate;
   }
   @keyframes leave {
-    0%{
+    0% {
       transform: translateY(0px);
     }
-    100%{
+    100% {
       transform: translateY(-30px);
     }
   }
@@ -87,21 +88,31 @@
             flex-direction: column;
             gap: 15px;
             align-items: flex-start;
-            .number {
-              font-size: 70px;
-              font-weight: 900;
-              color: #ffffff59;
-              height: 100%;
+
+            .label {
+              font-size: 18px;
+              line-height: 18px;
+              font-weight: 400;
+              color: var(--white);
+              background-color: var(--accent);
+              padding: 5px 18px;
+              border-radius: 15px 0 15px 0;
+              margin-bottom: 15px;
+              display: inline-block;
             }
+
             .heading {
               font-size: 26px;
               font-weight: 700;
               color: white;
               text-align: left;
             }
-            p {
-              color: rgba(255, 255, 255, 0.911);
-              font-size: 18px;
+
+            .arrow {
+              color: white;
+             svg{
+              font-size: 25px;
+             }
             }
           }
         }
