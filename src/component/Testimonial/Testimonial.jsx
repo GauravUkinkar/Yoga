@@ -9,6 +9,7 @@ import test1 from "../../assets/test.png";
 import { Pagination, Autoplay } from "swiper/modules";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
+import img_flo from "../../assets/about-img.png";
 const Testimonial = () => {
  const carddata = [
   {
@@ -46,6 +47,7 @@ const Testimonial = () => {
   return (
     <>
       <div className="testimonial-parent parent">
+        <img className="flower" src={img_flo} alt="" />
         <div className="testimonial-cont cont">
           <div className="content-group">
             <div className="sec-indicator">Happy Customers!</div>
@@ -90,6 +92,7 @@ const Testimonial = () => {
             </Swiper>
           </div>
         </div>
+        <img className="flower2" src={img_flo} alt="" />
       </div>
     </>
   );

@@ -14,6 +14,8 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import img_leave from "../../assets/services_left_shape.png";
+
 const Our_Offering = () => {
   const carddata = [
     {
@@ -57,9 +59,11 @@ const Our_Offering = () => {
       desc: "Come home to yourself. This gentle offering blends meditative movement, reflection, and intention setting to deepen your self-trust and reconnect with your inner wisdom.",
     },
   ];
+
   return (
     <>
       <div className="our-offering-parent parent">
+        <img className="leave" src={img_leave} alt="" />
         <div className="our-offering-cont cont">
           <div className="content-group">
             <div className="sec-indicator">SIGNATURE OFFERINGS</div>

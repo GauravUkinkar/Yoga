@@ -1,5 +1,23 @@
 .testimonial-parent {
   background: var(--background);
+  position: relative;
+
+  .flower{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    animation: flower 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes flower {
+    0%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-30px);
+    }
+  }
+  
   .testimonial-cont {
     padding: 100px 10px;
     display: flex;
@@ -106,6 +124,23 @@
         width: 20px;
         height: 20px;
       }
+    }
+  }
+
+  .flower2{
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    animation: flower2 1s ease-in-out infinite alternate;
+
+  }
+
+  @keyframes flower2 {
+    0%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-30px);
     }
   }
 }
