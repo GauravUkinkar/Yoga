@@ -81,9 +81,10 @@
           justify-content: center;
         }
         .content {
-          color: var(--accent);
+          color: #8d6905a6;
           font-size: 24px;
           font-weight: 600;
+          text-shadow: 0px 0px 8px var(--accent);
         }
       }
     }
