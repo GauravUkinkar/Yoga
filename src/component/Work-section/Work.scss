@@ -36,13 +36,22 @@
       .left {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         .content {
           display: flex;
           flex-direction: column;
           gap: 20px;
           position: relative;
           z-index: 1;
+
+          .box1 {
+            transform: translateX(7px);
+            align-items: flex-start !important;
+          }
+          .box3 {
+            transform: translateX(1px);
+          }
+
           .box1,
           .box2,
           .box3 {
@@ -63,7 +72,7 @@
               }
               p {
                 text-align: right;
-                color:var(--text);
+                color: var(--text);
               }
             }
             .right-i {
@@ -84,9 +93,10 @@
             padding-right: 25px;
           }
           .left-img {
+            height: 90%;
             position: absolute;
             right: 6px;
-            top: 50px;
+            top: 5px;
             z-index: -1;
           }
         }
@@ -96,8 +106,8 @@
           width: 100%;
         }
       }
-      .right{
-         display: flex;
+      .right {
+        display: flex;
         align-items: center;
         justify-content: center;
         .content {
@@ -106,6 +116,13 @@
           gap: 20px;
           position: relative;
           z-index: 1;
+
+          .box1 {
+            transform: translateX(0px);
+          }
+          .box3 {
+            transform: translateX(-5px);
+          }
           .box1,
           .box2,
           .box3 {
@@ -114,6 +131,7 @@
             justify-content: flex-end;
             flex-direction: row-reverse;
             gap: 40px;
+
             .left-c {
               display: flex;
               flex-direction: column;
@@ -127,7 +145,7 @@
               }
               p {
                 text-align: left;
-                color:var(--text);
+                color: var(--text);
               }
             }
             .right-i {
@@ -148,9 +166,10 @@
             padding-left: 25px;
           }
           .left-img {
+            height: 80%;
             position: absolute;
             left: 6px;
-            top: 50px;
+            top: 29px;
             z-index: -1;
           }
         }
