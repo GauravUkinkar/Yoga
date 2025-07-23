@@ -4,6 +4,7 @@
   height: 100dvh;
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
   .overlay {
     position: absolute;
     top: 0;
