@@ -1,6 +1,7 @@
 import React from "react";
 import "./Services.scss";
 import img1 from "../../assets/card1.jpg";
+import left_leaf from "../../assets/services_left_shape.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Services = () => {
@@ -37,6 +38,7 @@ const Services = () => {
   return (
     <>
       <div className="service-parent parent">
+        <img className="left-leaf" src={left_leaf} alt="" />
         <div className="service-cont cont">
           <div className="content-group">
             <div className="sec-indicator">OUR SERVICES</div>

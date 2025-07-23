@@ -12,8 +12,8 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        animation: leftImg 3s ease-in-out infinite alternate;
         .background-img {
+          animation: leftImg 3s ease-in-out infinite alternate;
           position: absolute;
           top: 0;
           left: -10%;
@@ -26,12 +26,29 @@
           height: 100%;
           object-fit: contain;
         }
+        .leaf-img {
+          position: absolute;
+          top: 40%;
+          left: -10%;
+          width: 30%;
+          height: 30%;
+          z-index: -1;
+          animation: left-Img 3s ease-in-out infinite alternate;
+        }
         @keyframes leftImg {
           0% {
-            transform: translateX(0);
+            transform: translateY(0);
           }
           100% {
-            transform: translateX(-30px);
+            transform: translateY(-30px);
+          }
+        }
+        @keyframes left-Img {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-30px);
           }
         }
       }

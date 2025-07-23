@@ -2,6 +2,7 @@ import React from "react";
 import "./About.scss";
 import aboutImg from "../../assets/about.webp";
 import aboutImg2 from "../../assets/about-img.png";
+import aboutImg3 from "../../assets/leaf.png";
 const About = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const About = () => {
                 src={aboutImg2}
                 alt="About Images"
               />
+              <img className="leaf-img" src={aboutImg3} alt="About Image" />
               <img src={aboutImg} alt="About Image" />
             </div>
           </div>
@@ -34,7 +36,7 @@ const About = () => {
             <div className="bottom-box">
               <div className="line"></div>
               <div className="content">
-                Whether you’re seeking impact, balance, or growth—this is your
+                Whether you’re seeking impact, balance, or growth this is your
                 path to a clearer mind, stronger body, and aligned soul.
               </div>
             </div>

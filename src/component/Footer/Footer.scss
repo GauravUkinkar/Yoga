@@ -39,7 +39,6 @@
       }
     }
     .middel-footer {
-      border: 1px solid red;
       width: 100%;
       margin-top: 40px;
       padding: 10px 10px;
@@ -47,7 +46,6 @@
       gap: 20px;
       justify-content: space-between;
       .logo {
-        border: 1px solid red;
         width: calc(100% / 4);
         img {
           width: 100%;
@@ -134,7 +132,6 @@
         .icon{
           display: flex;align-items: center;justify-content: flex-start;  
           gap:10px;
-          border:1px solid red;
           svg{
             color:var(--white);
             font-size:24px;
