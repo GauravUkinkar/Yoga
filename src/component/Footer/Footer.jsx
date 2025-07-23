@@ -7,10 +7,12 @@ import { FaTwitter } from "react-icons/fa6";
 import { FaLinkedinIn, FaMapMarkerAlt } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
+
 const Footer = () => {
   return (
     <>
       <div className="footer-parent parent bg-img-cover">
+      {/* <img className="img-foot" src={imgf} alt="" /> */}
         <div className="footer-cont cont">
           <div className="top-footer">
             <div className="sec-indicator ">Start Your Journey With Me</div>
@@ -68,6 +70,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+       
         <div className="bottom-footer">
           <p>Copyright 2025, All Rights Reserved.</p>
         </div>
