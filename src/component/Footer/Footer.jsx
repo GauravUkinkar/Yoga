@@ -10,7 +10,7 @@ import { IoIosMail } from "react-icons/io";
 const Footer = () => {
   return (
     <>
-      <div className="footer-parent parent">
+      <div className="footer-parent parent bg-img-cover">
         <div className="footer-cont cont">
           <div className="top-footer">
             <div className="sec-indicator ">Start Your Journey With Me</div>

@@ -1,9 +1,6 @@
 .footer-parent {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent),
-    url("../../assets/herobg1.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),
+    url("../../assets/nature.webp");
 
   .footer-cont {
     padding: 40px 0px;
@@ -47,8 +44,11 @@
       justify-content: space-between;
       .logo {
         width: calc(100% / 4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img {
-          width: 100%;
+          width: 80%;
         }
       }
       .about {
@@ -62,7 +62,7 @@
           font-size: 26px;
         }
         p {
-          color: white;
+          color: rgba(255, 255, 255, 0.753);
           text-align: left;
         }
         .icon-group {
@@ -73,14 +73,14 @@
           .icon {
             display: flex;
             gap: 20px;
-            color: white;
+            color: rgba(255, 255, 255, 0.753);
             cursor: pointer;
             align-items: center;
             svg {
               font-size: 24px;
             }
             a {
-              background: rgba(12, 0, 0, 0.425);
+              background: rgba(12, 0, 0, 0.747);
               padding: 10px;
               border-radius: 50px;
               width: 40px;
@@ -110,9 +110,11 @@
           display: flex;
           flex-direction: column;
           gap: 15px;
-          color: var(--white);
+          color: rgba(255, 255, 255, 0.753);
+
           a {
             transition: var(--trans);
+            font-size: 16px;
             &:hover {
               color: var(--accent);
             }
@@ -125,20 +127,28 @@
         flex-direction: column;
         gap: 20px;
         padding-top: 30px;
+
+        a {
+          font-size: 16px;
+        }
         h4 {
           color: var(--white);
           font-size: 26px;
         }
-        .icon{
-          display: flex;align-items: center;justify-content: flex-start;  
-          gap:10px;
-          svg{
-            color:var(--white);
-            font-size:24px;
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          svg {
+            color: rgba(255, 255, 255, 0.753);
+            font-size: 22px;
           }
-          span{
-            color:var(--white);
-            cursor:pointer;
+          span {
+            color: rgba(255, 255, 255, 0.753);
+            font-size: 16px;
+
+            cursor: pointer;
           }
         }
       }
@@ -148,7 +158,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.301);
     padding: 10px;
     p {
-      color: white;
+      color: rgba(255, 255, 255, 0.753);
       text-align: center;
     }
   }
