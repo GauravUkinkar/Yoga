@@ -1,10 +1,11 @@
 .header-parent {
-  height: 80px;
+  height: auto;
   background: transparent;
   position: absolute;
-  padding-top: 50px;
+  top: 0;
+  left: 0;
+  // padding-top: 50px;
   z-index: 5;
-  
 
   .header-cont {
     display: flex;
@@ -14,8 +15,8 @@
     padding: 20px 10px;
     .logo {
       img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+
         border-radius: 50%;
       }
     }
@@ -25,6 +26,73 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+    }
+
+    .mobile_nav {
+      display: none;
+      position: relative;
+
+      .nav_list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: auto;
+        height: 0px;
+        overflow: hidden;
+        transition: var(--trans);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .link {
+          padding: 8px 80px 8px 20px;
+          width: 100%;
+
+          &.active {
+            background-color: var(--accent);
+            color: var(--white);
+          }
+
+          &:hover {
+            background-color: var(--accent);
+            color: var(--white);
+          }
+        }
+
+        &.active {
+          height: 300px !important;
+        }
+      }
+
+      .hamburger {
+        display: flex;
+
+        .hamburger-react {
+          div {
+            background-color: white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .header-parent {
+    .header-cont {
+      .menu {
+        display: none;
+      }
+
+      .btn {
+        display: none;
+      }
+
+      .mobile_nav {
+        display: flex;
+      }
     }
   }
 }
