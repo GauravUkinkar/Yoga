@@ -3,7 +3,7 @@ import "./Header.scss";
 import img1 from "../../assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import Hamburger from "hamburger-react";
-const Header = () => {
+const Header = ({setPopup}) => {
   const [navBar, setnavBar] = useState(false);
 const location = useLocation()
   const togglenavs = () => {
@@ -52,7 +52,7 @@ const location = useLocation()
               </Link>
             ))}
           </div>
-          <div className="btn">Contact</div>
+          <div className="btn" onClick={()=>setPopup(true)} >Contact</div>
 
           <div class="mobile_nav">
             <div class="hamburger">

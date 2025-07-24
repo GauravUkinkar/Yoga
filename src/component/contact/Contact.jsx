@@ -1,11 +1,11 @@
 import React from "react";
 import "./Contact.scss";
 
-const Contact = () => {
+const Contact = ({setPopup}) => {
   return (
     <>
       <div class="contact_parent parent">
-        <div class="overlay"></div>
+        <div class="overlay" onClick={()=>setPopup(false)} ></div>
 
         <div class="contact_cont cont">
           <form action="">

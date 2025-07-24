@@ -68,3 +68,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 670px) {
+  .contact_parent {
+    .contact_cont {
+      form {
+        width: 100%;
+
+        .form_section {
+          grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .contact_parent {
+    .contact_cont {
+      form {
+        width: 100%;
+
+        .form_section {
+         display: flex !important;
+         flex-direction: column !important;
+        }
+      }
+    }
+  }
+}

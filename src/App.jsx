@@ -6,13 +6,15 @@ import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import Blog_Details from "./pages/Single-blog/Blog_Details";
 import Contact from "./component/contact/Contact";
+import { useState } from "react";
 
 function App() {
+  const [popup, setPopup] = useState(false);
   return (
     <>
       <BrowserRouter>
-        <Header />
-        {/* <Contact/> */}
+        <Header setPopup={setPopup} />
+        {popup && <Contact setPopup={setPopup} />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blog />} />
