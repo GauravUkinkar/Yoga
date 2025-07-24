@@ -5,12 +5,14 @@ import Header from "./component/Header/Header";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import Blog_Details from "./pages/Single-blog/Blog_Details";
+import Contact from "./component/contact/Contact";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <Contact/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
