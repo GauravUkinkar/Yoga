@@ -37,6 +37,25 @@
       background-color: var(--white);
       gap: var(--unit);
       border-radius: 80px 0px 80px 0px;
+      position: relative;
+
+      .cross-icon {
+        position: absolute;
+        right: -1%;
+        top: -2%;
+        background: black;
+        padding: 5px;
+        color: var(--white);
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: var(--trans);
+        &:hover{
+          background-color: var(--accent);
+        }
+      }
 
       .sec-indicator {
         color: var(--accent);
@@ -90,8 +109,8 @@
         width: 100%;
 
         .form_section {
-         display: flex !important;
-         flex-direction: column !important;
+          display: flex !important;
+          flex-direction: column !important;
         }
       }
     }

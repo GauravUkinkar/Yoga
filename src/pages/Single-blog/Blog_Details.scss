@@ -1,10 +1,11 @@
 .blog-detail-parent {
-  height: 100vh;
-  padding-top: 60px;
+  height: auto;
+ padding: 100px 0px;
   .blog-detail-cont {
     display: flex;
     flex-direction: column;
     gap: calc(var(--unit));
+    max-width: 600px;
 
     span{
         color: var(--accent);
@@ -14,6 +15,11 @@
       background: url("../../assets/page_top_img.jpg");
       height: 350px;
       width: 100%;
+    }
+
+    .date-cat{
+      display: flex;
+      justify-content: space-between;
     }
 
     .line {

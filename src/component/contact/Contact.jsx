@@ -1,14 +1,18 @@
 import React from "react";
 import "./Contact.scss";
+import { RxCross2 } from "react-icons/rx";
 
-const Contact = ({setPopup}) => {
+const Contact = ({ setPopup }) => {
   return (
     <>
       <div class="contact_parent parent">
-        <div class="overlay" onClick={()=>setPopup(false)} ></div>
+        <div class="overlay" onClick={() => setPopup(false)}></div>
 
         <div class="contact_cont cont">
           <form action="">
+            <span className="cross-icon" onClick={() => setPopup(false)}>
+              <RxCross2 />{" "}
+            </span>
             <p className="sec-indicator"> GET IN TOUCH </p>
             <h3>Send us a Message</h3>
             <p>
@@ -18,11 +22,11 @@ const Contact = ({setPopup}) => {
 
             <div class="form_section">
               <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name"  />
+              <input type="text" placeholder="Last Name" />
               <input type="email" placeholder="Email" />
               <input type="text" placeholder="Contact Number" />
-              <textarea name="" id="" placeholder="Message"  ></textarea>
-              <button className="btn" >Submit</button>
+              <textarea name="" id="" placeholder="Message"></textarea>
+              <button className="btn">Submit</button>
             </div>
           </form>
         </div>

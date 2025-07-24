@@ -2,7 +2,7 @@ import React from "react";
 import "./Services.scss";
 import img1 from "../../assets/card1.jpg";
 import left_leaf from "../../assets/services_left_shape.png";
-import ser from "../../assets/front-view-man-outside-yoga-position.jpg";
+import ser from "../../assets/front-view-man-outside-yoga-position.jpeg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +14,6 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
 const Services = () => {
-
   const carddata = [
     {
       id: 1,
@@ -64,7 +63,7 @@ const Services = () => {
               pagination={{ clickable: true }}
               loop={true}
               autoplay={{
-                delay: 25000000,
+                delay: 2500,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
               }}
