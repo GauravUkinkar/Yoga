@@ -72,13 +72,24 @@ const Our_Offering = () => {
           <div className="slider-group">
             <Swiper
               slidesPerView={2}
-              spaceBetween={20}
+              centeredSlides={false}
+              spaceBetween={30}
               pagination={{ clickable: true }}
               loop={true}
               autoplay={{
-                delay: 2500,
+                delay: 25000000,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                576: {
+                  slidesPerView: 2,
+                  spaceBetween:30
+                },
+        
               }}
               modules={[Pagination, Autoplay]}
               className="mySwiper"

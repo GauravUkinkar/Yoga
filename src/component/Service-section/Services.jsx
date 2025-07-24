@@ -5,6 +5,14 @@ import left_leaf from "../../assets/services_left_shape.png";
 import ser from "../../assets/front-view-man-outside-yoga-position.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination, Autoplay } from "swiper/modules";
+
 const Services = () => {
   const carddata = [
     {
@@ -47,15 +55,46 @@ const Services = () => {
             <p>Empowering change with over 20 years of inner work</p>
           </div>
           <div class="card-wrap">
-            {carddata.map((item) => (
-              <div className="card-menu">
-                <img className="top-card" src={ser} alt="" />
-                <div className="bottom-card">
-                  <h3>{item.heading}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              </div>
-            ))}
+            <Swiper
+              slidesPerView={2}
+              centeredSlides={false}
+              spaceBetween={30}
+              pagination={{ clickable: true }}
+              loop={true}
+              autoplay={{
+                delay: 25000000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                576: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }}
+              modules={[Pagination, Autoplay]}
+              className="mySwiper"
+            >
+              {carddata.map((item) => (
+                <SwiperSlide>
+                  <div className="card-menu">
+                    <img className="top-card" src={ser} alt="" />
+                    <div className="bottom-card">
+                      <h3>{item.heading}</h3>
+                      <p>{item.desc}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
