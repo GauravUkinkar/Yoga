@@ -49,13 +49,13 @@ function useLoopingTypingEffect(
   return displayed;
 }
 
-const Hero = () => {
+const Hero = ({setPopup}) => {
   const typedText = useLoopingTypingEffect("Yoga & Coaching.", 60, 1200, 30);
 
   return (
     <>
       <div className="hero-parent parent">
-        <div className="overlay"></div>
+        {/* <div className="overlay"></div> */}
         <div className="img-group-left">
           <img className="left-img" src={img3} alt="backgorund image" />
           <img src={img4} alt="Background Image" />
@@ -86,7 +86,7 @@ const Hero = () => {
               A soulful journey of transformation guided by evidence-based
               coaching and the ancient wisdom of yoga.
             </p>
-            <div className="btn">Book a Free Consultation</div>
+            <div className="btn" onClick={() => setPopup(true)}>Book a Free Consultation</div>
             <div className="icon">
               <FaArrowDownLong />
             </div>

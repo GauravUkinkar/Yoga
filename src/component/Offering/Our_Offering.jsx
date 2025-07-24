@@ -22,35 +22,39 @@ const Our_Offering = () => {
       id: 1,
       number: "01",
       img: card1,
-      url: "#",
+      url: "/blogs",
       heading: "Embodied Awareness Coaching ",
     },
     {
       id: 2,
       number: "02",
       img: card2,
-      url: "#",
+      url: "/blogs",
+
       heading: "Yoga for Inner Stability",
     },
     {
       id: 3,
       number: "03",
       img: card3,
-      url: "#",
+      url: "/blogs",
+
       heading: "Mindful Leadership Mentoring",
     },
     {
       id: 4,
       number: "04",
       img: card4,
-      url: "#",
+      url: "/blogs",
+
       heading: "Stress Release & Nervous System Reset",
     },
     {
       id: 5,
       number: "05",
       img: card5,
-      url: "#",
+      url: "/blogs",
+
       heading: "Sacred Self-Connection Practice",
     },
   ];
@@ -77,7 +81,7 @@ const Our_Offering = () => {
               pagination={{ clickable: true }}
               loop={true}
               autoplay={{
-                delay: 25000000,
+                delay: 2500,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
               }}
@@ -87,31 +91,29 @@ const Our_Offering = () => {
                 },
                 576: {
                   slidesPerView: 2,
-                  spaceBetween:30
+                  spaceBetween: 30,
                 },
-        
               }}
               modules={[Pagination, Autoplay]}
               className="mySwiper"
             >
               {carddata.map((card) => (
                 <SwiperSlide key={card.id}>
-                  <div
-                    className="img-boxs bg-img-cover"
-                    style={{ backgroundImage: `url(${card.img})` }}
-                  >
-                    <div className="overlay"></div>
-                    <div className="content-box">
-                      <div class="label">Yoga</div>
-
-                      <div className="heading">{card.heading}</div>
-                      <Link to={card.link}>
+                  <Link to={card.url}>
+                    <div
+                      className="img-boxs bg-img-cover"
+                      style={{ backgroundImage: `url(${card.img})` }}
+                    >
+                      <div className="overlay"></div>
+                      <div className="content-box">
+                        <div className="label">Yoga</div>
+                        <div className="heading">{card.heading}</div>
                         <div className="arrow">
                           <FaArrowRightLong />
                         </div>
-                      </Link>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>

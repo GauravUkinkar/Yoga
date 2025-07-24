@@ -1,5 +1,22 @@
 .work-parent {
   background: var(--background);
+  position: relative;
+.leaf-img{
+  position: absolute;
+  right: 0;
+  top: 8%;
+  animation: leaf 2s ease-in-out infinite alternate;
+}
+
+@keyframes leaf {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
   .work-cont {
     padding: 100px 10px;
     display: flex;

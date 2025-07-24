@@ -4,10 +4,13 @@ import img3 from "../../assets/imagenew.webp";
 import newimg from "../../assets/work.png";
 import newimg2 from "../../assets/work2.png";
 import { MdOutlineCheckCircle } from "react-icons/md";
+import leaf from "../../assets/our_specialties_right_shape.png";
+
 const Work = () => {
   return (
     <>
-      <div className="work-parent parent">
+      <div className="work-parent parent" id="chooseus">
+        <img className="leaf-img" src={leaf} alt="" />
         <div className="work-cont cont">
           <div className="content-group">
             <div className="sec-indicator">WHY WORK WITH ME</div>

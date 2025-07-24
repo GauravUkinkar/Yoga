@@ -1,5 +1,6 @@
 .hero-parent {
-  background: url("../../assets/herobg1.png") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)),
+    url("../../assets/herobg1.png") no-repeat center center;
   // background:red;
   height: 100dvh;
   background-size: cover;
@@ -94,7 +95,6 @@
   }
   .hero-cont {
     display: flex;
-
     align-items: center;
     justify-content: center;
     position: relative;
@@ -135,8 +135,10 @@
     .right {
       width: 50%;
       animation: rightbox 2s ease-in-out infinite alternate;
+      display: flex;
+      justify-content: end;
       img {
-        width: 100%;
+        width: 85%;
         height: 100%;
         object-fit: cover;
       }
@@ -173,32 +175,29 @@
   }
 }
 
-
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1100px) {
   .hero-parent {
-    .social-icons{
+    .social-icons {
       top: 75%;
     }
   }
 }
 @media only screen and (max-width: 750px) {
   .hero-parent {
-
-
     .img-group-left {
+      display: none;
+    }
+    .img-group-right {
       display: none;
     }
     .hero-cont {
       flex-direction: column;
-
       .left {
         width: 100%;
-        align-items: center  !important;
-
+        align-items: center !important;
         h1 {
           text-align: center;
         }
-
         p {
           text-align: center;
         }
@@ -220,7 +219,23 @@
 
 @media only screen and (max-width: 450px) {
   .hero-parent {
+    padding-top: 120px;
+    height: auto;
     .hero-cont {
+      .left {
+        h1 {
+          font-size: 26px;
+        }
+        .btn {
+          font-size: 16px;
+        }
+        .icon {
+          svg {
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
       .right {
         img {
           width: 70%;

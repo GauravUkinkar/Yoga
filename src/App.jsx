@@ -16,7 +16,7 @@ function App() {
         <Header setPopup={setPopup} />
         {popup && <Contact setPopup={setPopup} />}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home setPopup={setPopup} />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blog-detail" element={<Blog_Details />} />
         </Routes>

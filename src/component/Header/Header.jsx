@@ -3,9 +3,9 @@ import "./Header.scss";
 import img1 from "../../assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import Hamburger from "hamburger-react";
-const Header = ({setPopup}) => {
+const Header = ({ setPopup }) => {
   const [navBar, setnavBar] = useState(false);
-const location = useLocation()
+  const location = useLocation();
   const togglenavs = () => {
     setnavBar(!navBar);
   };
@@ -16,20 +16,20 @@ const location = useLocation()
       path: "/",
     },
     {
-      name: "About",
-      path: "#",
-    },
-    {
-      name: "Work",
-      path: "#",
+      name: "Choose us",
+      path: "#chooseus",
     },
     {
       name: "Services",
-      path: "#",
+      path: "#services",
     },
     {
       name: "Testimonial",
-      path: "#",
+      path: "#testimonial",
+    },
+    {
+      name: "About",
+      path: "#about",
     },
     {
       name: "Blogs",
@@ -41,18 +41,20 @@ const location = useLocation()
     <>
       <div className="header-parent parent bg-img-cover">
         <div className="header-cont cont">
-          <div className="logo">
+          <a href="/" className="logo">
             <img src={img1} alt="Website Logo" />
-          </div>
+          </a>
           <div className="menu">
             {navlinks.map((item, index) => (
-              <Link key={index} to={item.path}>
+              <a key={index} href={item.path}>
                 {" "}
                 {item.name}{" "}
-              </Link>
+              </a>
             ))}
           </div>
-          <div className="btn" onClick={()=>setPopup(true)} >Contact</div>
+          <div className="btn" onClick={() => setPopup(true)}>
+            Contact
+          </div>
 
           <div class="mobile_nav">
             <div class="hamburger">
@@ -61,10 +63,17 @@ const location = useLocation()
 
             <div class={navBar ? "nav_list active" : "nav_list"}>
               {navlinks.map((item, index) => (
-                <Link key={index} to={item.path}  className={location.pathname === item.path ? "active link" : "link"}  >
+                <a
+                  key={index}
+                  href={item.path}
+                  onClick={() => setnavBar(false)}
+                  className={
+                    location.pathname === item.path ? "active link" : "link"
+                  }
+                >
                   {" "}
                   {item.name}{" "}
-                </Link>
+                </a>
               ))}
             </div>
           </div>

@@ -56,6 +56,8 @@
         flex-direction: column;
         gap: calc(var(--unit));
         .date {
+          display: flex;
+          justify-content: space-between;
           span {
             color: var(--accent);
             font-size: 14px;

@@ -3,10 +3,10 @@ import "./About.scss";
 import aboutImg from "../../assets/about.webp";
 import aboutImg2 from "../../assets/about-img.png";
 import aboutImg3 from "../../assets/leaf.png";
-const About = () => {
+const About = ({setPopup}) => {
   return (
     <>
-      <div className="about-parent parent">
+      <div className="about-parent parent" id="about">
         <div className="about-cont cont">
           <div className="left-about-box">
             <div className="img-group">
@@ -40,7 +40,7 @@ const About = () => {
                 path to a clearer mind, stronger body, and aligned soul.
               </div>
             </div>
-            <div className="btn">Get Started</div>
+            <div className="btn" onClick={() => setPopup(true)}>Get Started</div>
           </div>
         </div>
       </div>

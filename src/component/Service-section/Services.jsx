@@ -48,7 +48,7 @@ const Services = () => {
 
   return (
     <>
-      <div className="service-parent parent">
+      <div className="service-parent parent" id="services">
         <img className="left-leaf" src={left_leaf} alt="" />
         <div className="service-cont cont">
           <div className="content-group">

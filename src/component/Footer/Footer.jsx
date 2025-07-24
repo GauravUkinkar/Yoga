@@ -8,7 +8,7 @@ import { FaLinkedinIn, FaMapMarkerAlt } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 
-const Footer = () => {
+const Footer = ({ setPopup }) => {
   return (
     <>
       <div className="footer-parent parent bg-img-cover">
@@ -19,7 +19,9 @@ const Footer = () => {
             <h2 className="heading">
               Reach out to explore, inquire, or say hello.{" "}
             </h2>
-            <div className="btn">Contact Now</div>
+            <div className="btn" onClick={() => setPopup(true)}>
+              Contact Now
+            </div>
           </div>
           <div className="middel-footer">
             <div className="logo">
@@ -48,11 +50,12 @@ const Footer = () => {
             <div className="list">
               <h4>Quick Links</h4>
               <div className="link-list">
-                <Link to="#">Home</Link>
-                <Link to="#">About </Link>
-                <Link to="#">Service</Link>
-                <Link to="#">Pricing</Link>
-                <Link to="#">Blog</Link>
+                <a href="/">Home</a>
+                <a href="#chooseus">Choose us </a>
+                <a href="#services">Services</a>
+                <a href="#testimonial">Testimonial</a>
+                <a href="#about">About</a>
+                <a href="/blogs">Blog</a>
               </div>
             </div>
             <div className="contact">

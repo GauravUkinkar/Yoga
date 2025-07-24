@@ -47,7 +47,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="testimonial-parent parent">
+      <div className="testimonial-parent parent" id="testimonial">
         <img className="flower" src={img_flo} alt="" />
         <div className="testimonial-cont cont">
           <div className="content-group">

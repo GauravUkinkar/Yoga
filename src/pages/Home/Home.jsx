@@ -9,19 +9,18 @@ import Testimonial from "../../component/Testimonial/Testimonial";
 import Accordian from "../../component/Accordian/Accordian";
 import Footer from "../../component/Footer/Footer";
 
-const Home = () => {
+const Home = ({ setPopup }) => {
   return (
     <>
-      <Hero />
+      <Hero setPopup={setPopup} />
       <Work />
       <Services />
       <Testimonial />
-      <About />
+      <About setPopup={setPopup} />
       <Our_Offering />
       {/* <Pricing /> */}
       {/* <Accordian /> */}
-      <Footer />
-
+      <Footer setPopup={setPopup} />
     </>
   );
 };

@@ -8,18 +8,23 @@ const Blog = () => {
     {
       img: img1,
       date: "Jan 21, 2017",
+      category: "Yoga",
       title: "Blog Title",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       img: img1,
       date: "Jan 21, 2017",
+      category: "Yoga",
+
       title: "Blog Title",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       img: img1,
       date: "Jan 21, 2017",
+      category: "Yoga",
+
       title: "Blog Title",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
@@ -42,12 +47,13 @@ const Blog = () => {
 
       <div className="parent blog-parent">
         <div className="cont blog-cont">
-          {data.map((item, index) => (
+          {data.map((item) => (
             <div className="mainwrapper">
               <img src={item.img} alt="blog image" />
               <div className="content-wrap">
                 <div className="date">
-                  <span>{item.date} </span>
+                  <span>Date: {item.date} </span>
+                  <span>Category: {item.category} </span>
                 </div>
                 <h2 className="title">{item.title}</h2>
                 <p className="text">{item.text}</p>
@@ -60,7 +66,6 @@ const Blog = () => {
               </div>
             </div>
           ))}
-       
         </div>
       </div>
     </>
