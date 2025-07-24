@@ -46,7 +46,7 @@
       align-items: center;
       justify-content: center;
       padding-top: 30px;
-      width: var(--width);
+      width: 100%;
       height: 500px;
       .swiper {
         width: 100%;
@@ -140,6 +140,14 @@
     }
     100% {
       transform: translateY(-30px);
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .testimonial-parent {
+    .flower {
+      display: none;
     }
   }
 }
