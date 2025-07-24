@@ -173,8 +173,118 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .footer-parent {
+    .footer-cont {
+      .middel-footer {
+        // flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        .logo {
+          display: none;
+        }
+        .about {
+          width: calc(100% / 3);
+        }
+        .list {
+          width: calc(100% / 3);
+        }
+        .contact {
+          width: calc(100% / 3);
+          justify-content: start;
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 700px) {
+  .footer-parent {
+    .footer-cont {
+      .middel-footer {
+        flex-direction: column;
+        .logo {
+          display: none;
+        }
+        .about {
+          width: 100%;
+        }
+        .list {
+          width: 100%;
+        }
+        .contact {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 
-@media(max-width: 1000px){
-  
+@media (max-width: 850px) {
+  .footer-parent {
+    .footer-cont {
+      padding: 40px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .top-footer {
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 28px;
+        gap: 10px;
+        border-radius: 60px 0px 60px 0px;
+        position: absolute;
+        box-shadow: var(--shadow);
+        top: -35%;
+        .heading {
+          font-family: "Playfair Display", sans-serif;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 52.8px;
+          color: rgb(36, 36, 36);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 635px) {
+  .footer-parent {
+    .footer-cont {
+      .top-footer {
+        padding: 20px;
+        gap: 10px;
+        border-radius: 60px 0px 60px 0px;
+        position: absolute;
+        box-shadow: var(--shadow);
+        top: -35%;
+        .sec-indicator {
+          font-size: 18px;
+        }
+        .heading {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 30px;
+        }
+        .btn {
+          font-family: Karla, sans-serif;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-parent {
+    .footer-cont {
+      .top-footer {
+        display: none;
+      }
+    }
+  }
 }
