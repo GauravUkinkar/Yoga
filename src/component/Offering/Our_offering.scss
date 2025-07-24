@@ -56,7 +56,6 @@
       .swiper {
         width: 100%;
         height: 100%;
-
       }
 
       .swiper-slide {
@@ -112,36 +111,43 @@
 
             .arrow {
               color: white;
-             svg{
-              font-size: 25px;
-             }
+              svg {
+                font-size: 25px;
+              }
             }
           }
         }
       }
-      .swiper-pagination-bullet {
-        background: var(--accent);
-        width: 20px;
-        height: 20px;
-      }
+      
     }
   }
 }
 
+.swiper-pagination-bullet {
+  background: var(--accent);
+  width: 20px;
+  height: 20px;
+}
 
-@media(max-width: 576px){
-  .our-offering-parent {  
+@media (max-width: 576px) {
+  .swiper-pagination-bullet {
+    background: var(--accent);
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .our-offering-parent {
     .our-offering-cont {
-      padding: 30px 10px; 
-    .content-group {
+      padding: 30px 10px;
+      .content-group {
         h2 {
-         font-size: 26px;
+          font-size: 26px;
         }
         p {
-        
         }
       }
-     
     }
   }
 }

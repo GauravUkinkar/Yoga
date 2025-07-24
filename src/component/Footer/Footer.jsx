@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer-parent parent bg-img-cover">
-      {/* <img className="img-foot" src={imgf} alt="" /> */}
+        {/* <img className="img-foot" src={imgf} alt="" /> */}
         <div className="footer-cont cont">
           <div className="top-footer">
             <div className="sec-indicator ">Start Your Journey With Me</div>
@@ -57,21 +57,22 @@ const Footer = () => {
             </div>
             <div className="contact">
               <h4>Contact Us</h4>
-              <a href="#" className="icon"><IoCallSharp />
+              <a href="#" className="icon">
+                <IoCallSharp />
                 <span>+9090909090</span>
               </a>
-                 <a href="#" className="icon"><IoIosMail />
+              <a href="#" className="icon">
+                <IoIosMail />
                 <span>info@gmail.com</span>
               </a>
-                 <a href="#" className="icon"><FaMapMarkerAlt />
+              <a href="#" className="icon">
+                <FaMapMarkerAlt />
                 <span>Lorem ipsum dolor sit amet.</span>
               </a>
-             
             </div>
           </div>
         </div>
 
-       
         <div className="bottom-footer">
           <p>Copyright 2025, All Rights Reserved.</p>
         </div>
