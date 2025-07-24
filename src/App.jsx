@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <Header setPopup={setPopup} /> */}
+        <Header setPopup={setPopup} />
         {popup && <Contact setPopup={setPopup} />}
         <Routes>
           <Route path="/" element={<Home />} />
