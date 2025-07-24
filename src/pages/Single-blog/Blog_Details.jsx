@@ -4,8 +4,7 @@ import "./Blog_Details.scss";
 const Blog_Details = () => {
   return (
     <>
-     
-     <div className="pagetop-parent parent bg-img-cover">
+      <div className="pagetop-parent parent bg-img-cover">
         <div className="pagetop-cont cont">
           <nav className="breadcrumb">
             <a href="/" className="breadcrumb-link">
@@ -18,15 +17,14 @@ const Blog_Details = () => {
         </div>
       </div>
 
-      
       <div className="parent blog-detail-parent">
         <div className="cont blog-detail-cont">
           <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
           <div className="page-top-parent bg-img-cover"></div>
-         <div class="date-cat">
-         <span>Jan 21, 2017</span>
-         <span>Yoga</span>
-         </div>
+          <div class="date-cat">
+            <span>Jan 21, 2017</span>
+            <span>Yoga</span>
+          </div>
           <div className="line"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
