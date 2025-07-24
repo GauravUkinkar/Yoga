@@ -14,36 +14,38 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
 const Services = () => {
+
   const carddata = [
     {
       id: 1,
       img: img1,
       link: "#",
       heading: "Coaching",
-      desc: "Executive, Life, Leadership Coaching",
+      desc: "Executive, Life, Leadership Coaching.",
     },
     {
       id: 2,
       img: img1,
       link: "#",
       heading: "Mind Mastery ",
-      desc: "Train your mind to shift from self-sabotage to self-mastery.",
+      desc: "Train your mind to  self-mastery.",
     },
     {
       id: 3,
       img: img1,
       link: "#",
       heading: "Yoga & Wellness",
-      desc: "Hatha Yoga, Pranayama, Meditation (Group/Private)",
+      desc: "Hatha Yoga, Pranayama, Meditation.",
     },
     {
       id: 4,
       img: img1,
       link: "#",
       heading: "Coach &  Training",
-      desc: "Aspiring coach development (MML Faculty)",
+      desc: "Aspiring coach development (MML Faculty).",
     },
   ];
+
   return (
     <>
       <div className="service-parent parent">

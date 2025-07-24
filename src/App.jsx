@@ -12,7 +12,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Contact/>
+        {/* <Contact/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blog />} />
