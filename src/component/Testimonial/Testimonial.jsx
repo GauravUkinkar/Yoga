@@ -16,32 +16,20 @@ const Testimonial = () => {
     {
       id: 1,
       img: test1,
-      desc: "I was constantly overwhelmed and anxious. Since joining these sessions, I feel calmer, more present, and finally connected to my body.",
-      name: "Pooja S.",
+      desc: "Practicing with Ranu transformed the way I experience my breath and body. Her calm presence and deep wisdom made every session feel like coming home to myself.",
+      name: "Neha, Senior Consultant",
     },
     {
       id: 2,
       img: test1,
-      desc: "This yoga journey helped me heal my chronic back pain. The breathwork and slow movement brought my body back into balance.",
-      name: "Ravi K.",
+      desc: "I joined to learn yoga, but ended up learning so much more about myself. Ranu’s sessions go beyond the mat—they bring real clarity and peace.",
+      name: "Arvind, Entrepreneur",
     },
     {
       id: 3,
       img: test1,
-      desc: "The classes have taught me to slow down and really listen to myself. It's a beautiful blend of physical practice and inner peace.",
-      name: "Meera N.",
-    },
-    {
-      id: 4,
-      img: test1,
-      desc: "After years of struggling with sleep, I now wake up refreshed and clear-headed. The guided relaxation is truly magical.",
-      name: "Vikram D.",
-    },
-    {
-      id: 5,
-      img: test1,
-      desc: "Each session feels like a sacred pause. I’ve learned to trust myself and move with more ease and intention in every part of life.",
-      name: "Sneha T.",
+      desc: "Her guidance helped me reconnect with my inner strength during a difficult phase. The mindfulness tools she shares are something I carry into every day.",
+      name: "Sonal, Leadership Coach",
     },
   ];
 
@@ -51,8 +39,8 @@ const Testimonial = () => {
         <img className="flower" src={img_flo} alt="" />
         <div className="testimonial-cont cont">
           <div className="content-group">
-            <div className="sec-indicator">Happy Customers!</div>
-            <h2>What Our Clients are Saying</h2>
+            <div className="sec-indicator"> Reflections from the Journey</div>
+            <h2>Words from Fellow Seekers</h2>
           </div>
           <div className="slider-group">
             <Swiper

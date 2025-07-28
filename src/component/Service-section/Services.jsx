@@ -19,29 +19,29 @@ const Services = () => {
       id: 1,
       img: img1,
       link: "#",
-      heading: "Coaching",
-      desc: "Executive, Life, Leadership Coaching.",
+      heading: "Private & Group Yoga Sessions",
+      desc: "Hatha Yoga classes tailored to your pace, with a focus on breath, alignment, and strength.",
     },
     {
       id: 2,
       img: img1,
       link: "#",
-      heading: "Mind Mastery ",
-      desc: "Train your mind to  self-mastery.",
+      heading: "Pranayama & Meditation Classes",
+      desc: " Online sessions to help you build inner stillness, clarity, and emotional balance.",
     },
     {
       id: 3,
       img: img1,
       link: "#",
-      heading: "Yoga & Wellness",
-      desc: "Hatha Yoga, Pranayama, Meditation.",
+      heading: "Mind Mastery & Self-Inquiry",
+      desc: " Guided journeys that blend vedic reflection with tools to build awareness, resilience, and focus.",
     },
     {
       id: 4,
       img: img1,
       link: "#",
-      heading: "Coach &  Training",
-      desc: "Aspiring coach development (MML Faculty).",
+      heading: "Holistic Wellness Guidance",
+      desc: "Support for lifestyle shifts—covering daily routines, nutrition, and mindful habits.",
     },
   ];
 
@@ -51,9 +51,15 @@ const Services = () => {
         <img className="left-leaf" src={left_leaf} alt="" />
         <div className="service-cont cont">
           <div className="content-group">
-            <div className="sec-indicator">OUR SERVICES</div>
-            <h2>Mindful Coaching Grounded in Experience & Presence</h2>
-            <p>Empowering change with over 20 years of inner work</p>
+            <div className="sec-indicator">Offerings Rooted in Practice</div>
+            <h2>Yoga for Life, Designed for You</h2>
+            <p>
+              {" "}
+              Each offering is created with care—guided by years of practice and
+              a deep understanding of the body, breath, and inner self. Whether
+              you’re just beginning or seeking to deepen your journey, there’s a
+              space for you here.
+            </p>
           </div>
           <div class="card-wrap">
             <Swiper

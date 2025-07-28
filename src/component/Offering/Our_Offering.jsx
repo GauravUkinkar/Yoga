@@ -66,11 +66,9 @@ const Our_Offering = () => {
         <div className="our-offering-cont cont">
           <div className="content-group">
             <div className="sec-indicator">BLOGS</div>
-            <h2>Services Rooted in Presence, Wisdom & Transformation</h2>
+            <h2>The Conscious Corner</h2>
             <p>
-              Each offering is crafted to support your journey—whether you’re
-              stepping into leadership, deepening self-awareness, or seeking
-              inner alignment.
+              Thoughtful reads to inspire your journey—on the mat and beyond.
             </p>
           </div>
           <div className="slider-group">

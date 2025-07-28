@@ -13,21 +13,24 @@ const Work = () => {
         <img className="leaf-img" src={leaf} alt="" />
         <div className="work-cont cont">
           <div className="content-group">
-            <div className="sec-indicator">WHY WORK WITH ME</div>
-            <h2>Why Choose Ranu as Your Coach or Yoga Mentor?</h2>
+            <div className="sec-indicator">Why This Practice Works</div>
+            <h2>Experience That Grounds Every Session</h2>
             <p>
-              With global coaching credentials, decades of self-inquiry, and a
-              heart-centered approach, Ranu offers a rare blend of ancient
-              wisdom and modern methods — creating a safe, transformative space
-              for deep personal growth.
+              With years of immersive training and lived practice, each session
+              is thoughtfully crafted to support your mind, body, and inner
+              journey. Ranu blends yogic depth, presence, and compassionate
+              guidance to help you grow—on and off the mat.
             </p>
           </div>
           <div className="group-new">
             <div class="left">
               <div class="section">
                 <div class="content">
-                  <h4 class="heading">Vinyasa Yoga</h4>
-                  <p>Dolor reaellendus temorius maiores alia</p>
+                  <h4 class="heading">Over a Decade of Yogic Practice</h4>
+                  <p>
+                    Teaching since 2011, rooted in traditional Hatha Yoga with a
+                    modern understanding of body and mind.
+                  </p>
                 </div>
                 <div class="icon">
                   <MdOutlineCheckCircle />
@@ -35,8 +38,12 @@ const Work = () => {
               </div>
               <div class="section">
                 <div class="content">
-                  <h4 class="heading">Vinyasa Yoga</h4>
-                  <p>Dolor reaellendus temorius maiores alia</p>
+                  <h4 class="heading">Certified Yoga Acharya (RYT-500)</h4>
+                  <p>
+                    {" "}
+                    Internationally accredited through Sivananda Yoga Vedanta
+                    Centres—bringing authentic lineage to your practice.
+                  </p>
                 </div>
 
                 <div class="icon">
@@ -45,8 +52,11 @@ const Work = () => {
               </div>
               <div class="section">
                 <div class="content">
-                  <h4 class="heading">Vinyasa Yoga</h4>
-                  <p>Dolor reaellendus temorius maiores alia</p>
+                  <h4 class="heading">Holistic Focus Beyond Asanas</h4>
+                  <p>
+                    Sessions integrate asana, breathwork, mindfulness, and
+                    lifestyle guidance for total well-being
+                  </p>
                 </div>
 
                 <div class="icon">
@@ -62,8 +72,11 @@ const Work = () => {
             <div class="right">
               <div class="section">
                 <div class="content">
-                  <h4 class="heading">Vinyasa Yoga</h4>
-                  <p>Dolor reaellendus temorius maiores alia</p>
+                  <h4 class="heading">Grounded in Self-Inquiry</h4>
+                  <p>
+                    Inspired by vedic philosophy, each class is a space for
+                    reflection, clarity, and conscious evolution.
+                  </p>
                 </div>
 
                 <div class="icon">
@@ -72,8 +85,11 @@ const Work = () => {
               </div>
               <div class="section">
                 <div class="content">
-                  <h4 class="heading">Vinyasa Yoga</h4>
-                  <p>Dolor reaellendus temorius maiores alia</p>
+                  <h4 class="heading">For Professionals & Seekers Alike</h4>
+                  <p>
+                    Tailored sessions for individuals in leadership or
+                    transition, supporting focus, resilience, and balance.
+                  </p>
                 </div>
 
                 <div class="icon">
@@ -82,8 +98,13 @@ const Work = () => {
               </div>
               <div class="section">
                 <div class="content">
-                  <h4 class="heading">Vinyasa Yoga</h4>
-                  <p>Dolor reaellendus temorius maiores alia</p>
+                  <h4 class="heading">
+                    Compassionate and Intuitive Teaching Style
+                  </h4>
+                  <p>
+                    Known for creating safe, trust-filled spaces where each
+                    student feels seen, supported, and empowered.
+                  </p>
                 </div>
 
                 <div class="icon">

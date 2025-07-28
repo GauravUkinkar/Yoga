@@ -49,8 +49,8 @@ function useLoopingTypingEffect(
   return displayed;
 }
 
-const Hero = ({setPopup}) => {
-  const typedText = useLoopingTypingEffect("Yoga & Coaching.", 60, 1200, 30);
+const Hero = ({ setPopup }) => {
+  const typedText = useLoopingTypingEffect("Yoga for Life.", 60, 1200, 30);
 
   return (
     <>
@@ -77,16 +77,19 @@ const Hero = ({setPopup}) => {
         </div>
         <div className="hero-cont cont">
           <div className="left">
-            <p className="sec-indicator">START A HAPPY LIFE</p>
+            <p className="sec-indicator">HARNESS THE POWER WITHIN</p>
             <h1>
-              Empowering Mind, Body & Leadership Through{" "}
+              Unlock Balance, Strength and Clarity Through{" "}
               <span>{typedText}</span>
             </h1>
             <p>
-              A soulful journey of transformation guided by evidence-based
-              coaching and the ancient wisdom of yoga.
+              Experience mindful movement, breathwork, and inner stillness with
+              a professional yoga coach—offering a grounded path to personal and
+              professional growth.
             </p>
-            <div className="btn" onClick={() => setPopup(true)}>Book a Free Consultation</div>
+            <div className="btn" onClick={() => setPopup(true)}>
+              Start Your Journey Today
+            </div>
             <div className="icon">
               <FaArrowDownLong />
             </div>
