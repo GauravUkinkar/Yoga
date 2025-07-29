@@ -191,7 +191,7 @@
       display: none;
     }
     .hero-cont {
-      flex-direction: column;
+      flex-direction: column-reverse;
       .left {
         width: 100%;
         align-items: center !important;
@@ -221,8 +221,13 @@
   .hero-parent {
     padding-top: 120px;
     height: auto;
+    .social-icons {
+      display: none;
+    }
+
     .hero-cont {
       .left {
+        padding-top: 20px;
         h1 {
           font-size: 26px;
         }

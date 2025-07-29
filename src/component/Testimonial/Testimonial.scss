@@ -149,5 +149,62 @@
     .flower {
       display: none;
     }
+    .flower2 {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .testimonial-parent {
+    .testimonial-cont {
+      .slider-group {
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .content-box {
+            p {
+              font-size: 18px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .testimonial-parent {
+    .testimonial-cont {
+      .slider-group {
+      padding-top: 0;
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 16px;
+          .content-box {
+            .icon {
+              svg {
+                color: var(--accent);
+                font-size: 30px;
+              }
+            }
+            p {
+              font-size: 16px;
+              line-height: 25px;
+            }
+            .name {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 }

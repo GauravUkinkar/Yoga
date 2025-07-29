@@ -129,6 +129,11 @@
   .about-parent {
     .about-cont {
       .right-about-box {
+        justify-content: center;
+        align-items: center;
+        h2{
+          text-align: center;
+        }
         .bottom-box {
           .line {
             display: none;
