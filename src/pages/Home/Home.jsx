@@ -20,7 +20,7 @@ const Home = ({ setPopup }) => {
       <Our_Offering />
       {/* <Pricing /> */}
       {/* <Accordian /> */}
-      <Footer setPopup={setPopup} />
+      {/* <Footer setPopup={setPopup} /> */}
     </>
   );
 };

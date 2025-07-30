@@ -7,6 +7,7 @@ import Blog from "./pages/Blog/Blog";
 import Blog_Details from "./pages/Single-blog/Blog_Details";
 import Contact from "./component/contact/Contact";
 import { useState } from "react";
+import Footer from "./component/Footer/Footer";
 
 function App() {
   const [popup, setPopup] = useState(false);
@@ -20,6 +21,7 @@ function App() {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blog-detail" element={<Blog_Details />} />
         </Routes>
+        <Footer setPopup={setPopup} />
       </BrowserRouter>
     </>
   );

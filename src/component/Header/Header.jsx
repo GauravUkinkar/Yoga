@@ -31,10 +31,10 @@ const Header = ({ setPopup }) => {
       name: "About",
       path: "#about",
     },
-    {
-      name: "Blogs",
-      path: "/blogs",
-    },
+    // {
+    //   name: "Blogs",
+    //   path: "/blogs",
+    // },
   ];
 
   return (
@@ -51,6 +51,8 @@ const Header = ({ setPopup }) => {
                 {item.name}{" "}
               </a>
             ))}
+
+            <Link to="/blogs">Blogs</Link>
           </div>
           <div className="btn" onClick={() => setPopup(true)}>
             Contact
@@ -75,6 +77,7 @@ const Header = ({ setPopup }) => {
                   {item.name}{" "}
                 </a>
               ))}
+              <Link to="/blogs">Blogs</Link>
             </div>
           </div>
         </div>

@@ -1,14 +1,14 @@
 .blog-detail-parent {
   height: auto;
- padding: 100px 0px;
+  padding: 100px 0px 250px 0px;
   .blog-detail-cont {
     display: flex;
     flex-direction: column;
     gap: calc(var(--unit));
     max-width: 600px;
 
-    span{
-        color: var(--accent);
+    span {
+      color: var(--accent);
     }
 
     .page-top-parent {
@@ -17,7 +17,7 @@
       width: 100%;
     }
 
-    .date-cat{
+    .date-cat {
       display: flex;
       justify-content: space-between;
     }
