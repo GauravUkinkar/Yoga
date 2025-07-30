@@ -30,8 +30,7 @@ const Footer = ({ setPopup }) => {
             <div className="about">
               <h4>About Us</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                vitae.
+              Evolve with Ranu is a mindful space for those seeking clarity, strength, and inner balance through the timeless practice of yoga. Guided by Ranu Mishra’s expertise and presence, each session is an invitation to grow—on the mat and within.
               </p>
               <div className="icon-group">
                 <div className="icon">
